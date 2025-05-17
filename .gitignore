@@ -1,2 +1,4 @@
 .env
 *.pdf
+/home/st6322041/Git/git/ML/dataset/text/*
+/home/st6322041/Git/git/ML/dataset/doc/*
