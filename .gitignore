@@ -1,7 +1,8 @@
 .env
 *.pdf
-/home/st6322041/Git/git/ML/dataset/text/*
-/home/st6322041/Git/git/ML/dataset/doc/*
+ML/dataset/text/*
+ML/dataset/doc/*
 ML/dataset/text
 ML/dataset/dic
-/home/st6322041/Git/git/huggingface/test_trainer
+ML/dataset/token.csv
+huggingface/test_trainer

@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH -p defq
+#SBATCH -J JOB
+#SBATCH -o outdir/test.%J
+#SBATCH --gres=gpu:3g.40gb:1
+
+cd ~/Git/git/ML/dataset
+python3 tokenize.py
