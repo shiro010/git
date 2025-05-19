@@ -7,5 +7,5 @@
 source ~/.bashrc
 conda activate ML
 which python3
-cd ~/Git/git/ML/dataset
-python3 tokenizing.py
+cd ~/Git/git/ML
+python3 word2vec.py

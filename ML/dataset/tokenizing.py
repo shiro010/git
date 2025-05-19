@@ -1,17 +1,15 @@
-# In[1]: 
 import pandas as pd
 import numpy as np
 import os
 import glob
 import pathlib
 import re
-import janome
-import jaconv
+from janome.tokenizer import Tokenizer
+from janome.analyzer import Analyzer
+from janome.charfilter import *
 
 p_temp = pathlib.Path('text')
-
 article_list = []
-
 # フォルダ内のテキストファイルを全てサーチ
 for p in p_temp.glob('**/*.txt'):
     #第二階層フォルダ名がニュースサイトの名前になっているので、それを取得
@@ -30,12 +28,7 @@ for p in p_temp.glob('**/*.txt'):
     else :
         continue
 
-
 article_df = pd.DataFrame(article_list)
-
-from janome.tokenizer import Tokenizer
-from janome.analyzer import Analyzer
-from janome.charfilter import *
 
 t = Tokenizer()
 char_filters = [UnicodeNormalizeCharFilter()]
@@ -43,26 +36,13 @@ analyzer = Analyzer(char_filters=char_filters, tokenizer=t)
 
 word_lists = []
 for i, row in article_df.iterrows(): 
-    # print(i) 
-    # print(row[3])  
-    # print(row[4])
     row_lists = []
     for t in analyzer.analyze(row[4]):
         #形態素
         surf = t.surface
-        #基本形
-        # base = t.base_form
-        #品詞
-        # pos = t.part_of_speech
-        #読み
-        # reading = t.reading
-        
         row_lists.append(t)
+
     word_lists.append(row_lists)
-
-
-# In[4]:
-
 
 article_list = []
 for i in range(len(word_lists)):
@@ -71,16 +51,5 @@ for i in range(len(word_lists)):
     article_list.append(joined)
 
 df = pd.DataFrame(article_list, columns=["article"])
-
-
-# In[5]:
-
-
-df.head()
-
-
-# In[6]:
-
-
 df.to_csv('token.csv', encoding='utf-8')
 
