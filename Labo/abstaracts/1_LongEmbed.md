@@ -101,6 +101,7 @@ needle(大事な情報)を長文中から持ってくるテスト。
 
 
 ## Unknown
+RoPE,APE,GP,IP...など数学的意味とその処理について
 
 ## Reflection
 最近のembedding modelはquery-documentのラベル付けがされたデータを活用して作られているが、それの実装を確認したい。(contrasive lossが使われているらしい)
