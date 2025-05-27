@@ -21,7 +21,9 @@ RePEは現行のposition embeddingに対してcontext sequenceに柔軟である
 ## keyword 
 
 ## Unknown
-
+- Shaw et al.[2018]の従来のrelative positional embedding<br>
+- Transformerのfastforward層の処理
+- query, key, valueのベクトルの次元がなぜ違うか（おそらく次元圧縮？）
 ## Reflection
 
 ## Reference
