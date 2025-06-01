@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -p defq
+#SBATCH -J JOB
+#SBATCH -o /home/st6322041/Git/git/ML/outdir/test.%J
+#SBATCH --gres=gpu:3g.40gb:1
+
+source ~/.bashrc
+conda activate ML
+which python3
+cd ~/Git/git/ML
+time python3 finetuning.py
