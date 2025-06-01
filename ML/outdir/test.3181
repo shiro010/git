@@ -1,0 +1,16 @@
+/home/st6322041/anaconda3/envs/ML/bin/python3
+/home/st6322041/anaconda3/envs/ML/lib/python3.9/site-packages/huggingface_hub/file_download.py:943: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/st6322041/anaconda3/envs/ML/lib/python3.9/site-packages/torch/cuda/__init__.py:174: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11070). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+False
+生成されたテキストは:
+スチームパンクな赤ずきんちゃん、とてもおもしろいですよね。 ママとのお付き合い、そして赤ちゃんとの関わりを考えると、ちょっと気になるのが赤ちゃんとの関わり。 そしてお休みの日の楽しい
+生成されたテキストは:
+スチームパンクな赤ずきんちゃん、とてもおもしろいですよね。 実は、私が子どもだった頃は、子どもの頃のアニメの定番キャラクターって赤ずきんちゃんだったんですよね。 さすが
+生成されたテキストは:
+スチームパンクな赤ずきんちゃん、とてもおもしろいですよね。 2人が着けて行くと、赤ずきんちゃんが少しづつ、お着替えをして遊びまわってくれますよね。 でも、
+
+real	0m6.170s
+user	0m4.707s
+sys	0m0.579s

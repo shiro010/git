@@ -1,0 +1,14 @@
+/home/st6322041/anaconda3/envs/ML/bin/python3
+/home/st6322041/anaconda3/envs/ML/lib/python3.9/site-packages/huggingface_hub/file_download.py:943: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/st6322041/anaconda3/envs/ML/lib/python3.9/site-packages/torch/cuda/__init__.py:174: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11070). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+False
+生成されたテキストは:
+赤ずきんは白いおずおず、白いうさぎ、青いうさぎは白いおずおず、青い羊は青いパンツという、赤い色のパンツをつけた女性をモチーフにしたキャラクターである。 主人公の黒いうさぎは、黒が大好きな少年で、黒いウサギは黒パンツをはかせている。 青いウサギは赤い靴をはかせている。 黒ずきんには白い毛が多く、特に青い毛が目立ち、それを狙って、黒ずきんを狙う「白ウサギ」が現れた。 白ウサギはピンク色の髪で、白い毛皮のついた帽子をかぶっていた。 黒いウサギと青いうさぎはそれぞれ白いパンツをはかせていた。 黒いウサギは白い毛をはわせている。 白いパンツは赤いブーツをはかせていた。 青いおずおずは白い毛をよくはけ、青い靴をはかせていた。 青い服は青い帽子をはいている。 青い服は白い毛皮をはく。 青い帽子は白い
+生成されたテキストは:
+赤ずきんは白狼の部下にあたる狼男、白に化けて狼を倒したことがあるが、狼の女官によって白狼の館に監禁され、狼の女官に化けた白い狼と交換に狼の女官と結婚することとなる。 その際に白に白狐の姿に変えられた。 『狼男』では白狼の配下として物語を進めて行き、白狼との対決を経て「鬼白」から「白狼」という白竜の姿へと変わって行くが、黒山に捕らえられた後は白狼の助太刀を受けて白に立ち向かおうとする。 最終的に白鬼は白狼を斬り殺したが、白狼の助太刀に遭って白狼は白龍に斬り殺された。 そのため白龍の館に監禁されている白狼は「狼女」として白狼の女官と結婚する。 黒山 狼(くろやま ろう) 声 - 江口拓也(少年) 白狼によって、白狼の館に幽閉されている
+
+real	0m35.539s
+user	0m29.485s
+sys	0m1.527s

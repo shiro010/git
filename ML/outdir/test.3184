@@ -1,0 +1,61 @@
+/home/st6322041/anaconda3/envs/ML/bin/python3
+Mon Jun  2 01:02:01 2025       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.48.07    Driver Version: 515.48.07    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A100 80G...  On   | 00000000:01:00.0 Off |                   On |
+| N/A   51C    P0   173W / 300W |  30280MiB / 81920MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A100 80G...  On   | 00000000:25:00.0 Off |                   On |
+| N/A   64C    P0   305W / 300W |  29053MiB / 81920MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   2  NVIDIA A100 80G...  On   | 00000000:41:00.0 Off |                   On |
+| N/A   65C    P0   200W / 300W |  28133MiB / 81920MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   3  NVIDIA A100 80G...  On   | 00000000:61:00.0 Off |                   On |
+| N/A   28C    P0    43W / 300W |      0MiB / 81920MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  0   14   0   0  |      6MiB /  9728MiB | 14      0 |  1   0    0    0    0 |
+|                  |      0MiB / 16383MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    1    2    0     565306      C   python                          13944MiB |
+|    1    1    0     695949      C   python                          15050MiB |
+|    2    0    0     392393      C   python                          28130MiB |
++-----------------------------------------------------------------------------+
+/home/st6322041/anaconda3/envs/ML/lib/python3.9/site-packages/huggingface_hub/file_download.py:943: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/st6322041/anaconda3/envs/ML/lib/python3.9/site-packages/torch/cuda/__init__.py:174: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11070). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+False
+生成されたテキストは:
+赤ずきんとスチームパンクの物語を始めるとしましょう。 私は「あの赤ずきんがスチームパンクなんちゃらの世界」というのが好きなのでそう決めました。 そして、私のシナリオ「お
+生成されたテキストは:
+赤ずきんとスチームパンクの物語を始めるとしましょう。そのおはなしは、おはなしの最後にあなたの頭を浮かべることでしょう。この物語は、ある童話です。おは
+生成されたテキストは:
+赤ずきんとスチームパンクの物語を始めるとしましょう。 2人が森の怪物「スチームパンク」と遭遇し、スチームパンクの体内に描かれた人形を操作して、人形に描かれた動物を
+
+real	0m32.522s
+user	0m10.576s
+sys	0m5.760s
