@@ -1,4 +1,4 @@
-.env
+*.env
 *.pdf
 ML/dataset/text/*
 ML/dataset/doc/*
@@ -6,3 +6,5 @@ ML/dataset/text
 ML/dataset/dic
 ML/dataset/token.csv
 huggingface/test_trainer
+Dockerfile
+*.sh
