@@ -13,7 +13,7 @@ long contextにおいて様々なモデルが512～2048tokenほどのcontext win
 
 ## Method
 openとcloseなlanguage modelのcontext windowや関連情報の位置を調整することで調べた。
-まずRAGのようなタスクで複数の文章をモデルに与え調べた。
+まずRAGと似たタスクで複数の文章をモデルに与え調べた。
 次にkey-value retrieve taskを行い、modelがretrieveする範囲を調べた。
 使ったモデルは
 open: MPT-30B-Instruct, LongChat-13B (16K)
@@ -29,7 +29,13 @@ key-value retrieve taskではあるモデルは完璧に、あるモデルはま
 context windowの拡張をしたものとしていないものの精度はあまり変わってなかった。最初と最後が精度がよく、真ん中が精度が悪かった。
 つまりもともとのモデルでも"Lost in the middle"になっていた。
 
+model architecture(decoder vs encorder-decorder)の比較とquery-aware-contextualizationとinstraction finetuningを行って前提条件の検証をした。　
+今までのmodelはdecorder modelだったのでmodelはFlan-T5-XXL, Flan-UL2をつかった。extrainterpolationを使えば8k tokenはいる。
+結果、finetuning後もU字の傾向が表れたため、finetuningが原因ではないと分かった。
+
 ## Contribution Summary
+Nelson F. Liuはlong context modelは関連情報の位置によりタスクの精度が下がるのかという疑問を持ち、token数を調整して精度を測った結果、最初と最後の精度が高くなり、中間が低くなるという結果が得られた。
+
 
 # KURRフォーマット
 ## keyword 
@@ -42,6 +48,7 @@ context windowの拡張をしたものとしていないものの精度はあま
 - oracle setting 
   modelに一つ関連のある文章を与えてタスクを解かせる
 ## Unknown
+decorder-encorderが双方向から処理される流れ、理論
 
 ## Reflection
 
